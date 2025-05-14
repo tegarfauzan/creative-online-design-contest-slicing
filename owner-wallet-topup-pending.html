@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="flex min-h-screen bg-white text-black">
+      <!-- Sidebar -->
+      <aside class="w-64 bg-white border-r p-4 space-y-6">
+        <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">My Contests</a>
+        <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">My Wallet</a>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="flex-1 p-8">
+        <div class="flex justify-between items-start">
+          <h1 class="text-3xl font-bold mb-6">Top Up details</h1>
+          <section id="ProfileTop">
+            <div class="flex justify-between items-start mb-8">
+              <div class="flex items-center space-x-4">
+                <img src="https://via.placeholder.com/40" alt="User Avatar" class="w-10 h-10 rounded-full bg-gray-300" />
+                <div class="text-right">
+                  <p class="font-semibold">Irama Manji</p>
+                  <p class="text-sm">Role Owner</p>
+                  <a href="/" class="text-sm underline">Logout</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="p-8 max-w-screen-xl mx-auto">
+          <div class="bg-gray-200 text-sm text-black px-4 py-2 rounded mb-6 max-w-lg">Top up masih pending sehingga anda belum dapat membuka kontes terbaru, silahkan menunggu sesaat</div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Left Column -->
+            <div class="space-y-4">
+              <div class="flex justify-between">
+                <span class="font-semibold">Payment At</span>
+                <span>25 Mar 2025</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="font-semibold">Sub Total</span>
+                <span>Rp 22.190.000</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="font-semibold">Tax 11%</span>
+                <span>Rp 22.000</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="font-semibold">Grand Total</span>
+                <span>Rp 41.123.000</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="font-semibold">Insurance</span>
+                <span>Included</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="font-semibold">Loyalty Member</span>
+                <span>50% Off</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="font-semibold">Status</span>
+                <span>Pending</span>
+              </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="space-y-6">
+              <div class="flex items-center space-x-4">
+                <div class="w-16 h-16 bg-gray-300"></div>
+                <div>
+                  <p class="font-semibold">Manual Payment</p>
+                  <p class="text-sm text-gray-600">High Standard</p>
+                </div>
+              </div>
+
+              <hr />
+
+              <div class="bg-gray-300 w-full h-60 flex flex-col items-center justify-center text-sm font-medium text-black">
+                Image proof payment
+                <a href="https://via.placeholder.com/400x300?text=Image+proof+payment" target="_blank" rel="noopener noreferrer" class="underline mt-2"> preview </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

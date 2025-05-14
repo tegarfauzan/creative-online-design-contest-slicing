@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="flex min-h-screen bg-white text-black">
+      <aside class="w-64 bg-white border-r p-4 space-y-6">
+        <!-- Overview -->
+        <div>
+          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Overview</a>
+        </div>
+
+        <!-- Contest -->
+        <div class="mt-4 space-y-1">
+          <p class="font-semibold">Contest</p>
+          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Categories</a>
+          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Contests</a>
+        </div>
+
+        <!-- Members -->
+        <div class="mt-4 space-y-1">
+          <p class="font-semibold">Members</p>
+          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Owners</a>
+          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Designers</a>
+        </div>
+
+        <!-- Payment -->
+        <div class="mt-4 space-y-1">
+          <p class="font-semibold">Payment</p>
+          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Transactions</a>
+          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Wallets</a>
+        </div>
+
+        <!-- Users -->
+        <div class="mt-4 space-y-1">
+          <p class="font-semibold">Users</p>
+          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Users</a>
+          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Assign Role</a>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="flex-1 p-8">
+        <div class="flex justify-between items-start">
+          <h1 class="text-3xl font-bold mb-6">Top Up details</h1>
+          <section id="ProfileTop">
+            <div class="flex justify-between items-start mb-8">
+              <div class="flex items-center space-x-4">
+                <img src="https://via.placeholder.com/40" alt="User Avatar" class="w-10 h-10 rounded-full bg-gray-300" />
+                <div class="text-right">
+                  <p class="font-semibold">Ayunda Shayna</p>
+                  <p class="text-sm">Role Manager</p>
+                  <a href="/" class="text-sm underline">Logout</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="p-8 max-w-screen-xl mx-auto">
+          <div class="flex flex-col border-b pb-4 mb-6">
+            <div class="flex items-center space-x-4 mb-2">
+              <div class="w-12 h-12 bg-gray-300 rounded-full"></div>
+              <div>
+                <p class="font-semibold">Arin Supian</p>
+                <p class="text-sm text-gray-600">KTP 12930912412</p>
+              </div>
+            </div>
+            <div class="flex space-x-4 text-sm font-semibold text-gray-800">
+              <span>Role Owner</span>
+              <span>Wallet High Secured</span>
+              <span>Status Approved</span>
+            </div>
+          </div>
+
+          <!-- Approved Note -->
+          <div class="bg-blue-600 text-sm text-white px-4 py-2 rounded mb-6 max-w-lg">Transaksi sudah disetujui</div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Left Column -->
+            <div class="space-y-4">
+              <div class="flex justify-between">
+                <span class="font-semibold">Payment At</span>
+                <span>25 Mar 2025</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="font-semibold">Sub Total</span>
+                <span>Rp22.190.000</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="font-semibold">Tax 11%</span>
+                <span>Rp22.000</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="font-semibold">Grand Total</span>
+                <span>Rp41.123.000</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="font-semibold">Insurance</span>
+                <span>Included</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="font-semibold">Loyalty Member</span>
+                <span>50% Off</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="font-semibold">Status</span>
+                <span>Approved</span>
+              </div>
+              <!-- Tidak ada tombol Approve karena sudah Approved -->
+            </div>
+
+            <!-- Right Column -->
+            <div class="space-y-6">
+              <div class="flex items-center space-x-4">
+                <div class="w-16 h-16 bg-gray-300"></div>
+                <div>
+                  <p class="font-semibold">Manual Payment</p>
+                  <p class="text-sm text-gray-600">High Standard</p>
+                </div>
+              </div>
+
+              <hr />
+
+              <div class="bg-gray-300 w-full h-60 flex flex-col items-center justify-center text-sm font-medium text-black">
+                Image proof payment
+                <a href="https://via.placeholder.com/400x300?text=Image+proof+payment" target="_blank" rel="noopener noreferrer" class="underline mt-2"> preview </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="flex min-h-screen p-8 gap-12 font-sans text-black bg-white">
+      <!-- Sidebar -->
+      <aside class="w-64 bg-white border-r p-4 space-y-6">
+        <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">My Submissions</a>
+        <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">My Wallet</a>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="flex flex-col w-full gap-12">
+        <div class="flex items-center justify-between">
+          <h1 class="text-2xl font-bold mb-6">withdraw Wallet</h1>
+          <!-- Profile -->
+          <section id="ProfileTop">
+            <div class="flex justify-between items-start mb-8">
+              <div class="flex items-center space-x-4">
+                <img src="https://via.placeholder.com/40" alt="User Avatar" class="w-10 h-10 rounded-full bg-gray-300" />
+                <div class="text-right">
+                  <p class="font-semibold">Irama Manji</p>
+                  <p class="text-sm">Role Designer</p>
+                  <a href="/" class="text-sm underline">Logout</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="flex gap-12">
+          <!-- Left Form Section -->
+          <div class="flex-1">
+            <form class="space-y-4">
+              <div>
+                <label class="block font-semibold mb-1">top up amount</label>
+                <input type="text" placeholder="type amount" class="w-full border border-black px-4 py-2" />
+              </div>
+
+              <div>
+                <label class="block font-semibold mb-1">your bank name</label>
+                <input type="text" placeholder="type bank name" class="w-full border border-black px-4 py-2" />
+              </div>
+
+              <div>
+                <label class="block font-semibold mb-1">your bank account name</label>
+                <input type="text" placeholder="type bank account" class="w-full border border-black px-4 py-2" />
+              </div>
+
+              <div>
+                <label class="block font-semibold mb-1">your bank acc no</label>
+                <input type="text" placeholder="type bank acc number" class="w-full border border-black px-4 py-2" />
+              </div>
+
+              <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-2">Request withdrawal now</button>
+            </form>
+          </div>
+
+          <!-- Right Info Section -->
+          <div class="flex-1 space-y-6">
+            <!-- Wallet Card -->
+            <div class="bg-[#15003A] text-white p-6 rounded-2xl">
+              <div class="font-bold">Irama Wallet</div>
+              <div class="text-sm text-violet-200">Active</div>
+              <div class="text-3xl font-bold mt-4">Rp 18.000.000</div>
+            </div>
+
+            <!-- Terms & Rules -->
+            <div>
+              <h2 class="text-lg font-bold mb-2">Follow Terms & Rules</h2>
+              <ul class="list-disc pl-5 space-y-1">
+                <li>lorem dolor si amet makan ayam biar sehat</li>
+                <li>lorem dolor si amet makan ayam biar sehat</li>
+                <li>lorem dolor si amet makan ayam biar sehat</li>
+                <li>lorem dolor si amet makan ayam biar sehat</li>
+                <li>lorem dolor si amet makan ayam biar sehat</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

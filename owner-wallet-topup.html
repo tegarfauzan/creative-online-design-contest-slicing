@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="flex min-h-screen bg-white">
+      <!-- Sidebar -->
+      <aside class="w-64 bg-white border-r p-4 space-y-6">
+        <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">My Contests</a>
+        <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">My Wallet</a>
+      </aside>
+
+      <!-- Content -->
+      <main class="flex-1 p-8">
+        <div class="flex justify-between items-start mb-8">
+          <h1 class="text-2xl font-bold">Top Up Wallet</h1>
+          <section id="ProfileTop">
+            <div class="flex justify-between items-start mb-8">
+              <div class="flex items-center space-x-4">
+                <img src="https://via.placeholder.com/40" alt="User Avatar" class="w-10 h-10 rounded-full bg-gray-300" />
+                <div class="text-right">
+                  <p class="font-semibold">Irama Manji</p>
+                  <p class="text-sm">Role Owner</p>
+                  <a href="/" class="text-sm underline">Logout</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="p-8 bg-white text-black grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <!-- Left Form Section -->
+          <form>
+            <div class="mb-6">
+              <h2 class="font-semibold mb-2">Send payment to</h2>
+              <p><strong>Bank Name:</strong> BWA Asia</p>
+              <p><strong>Bank Account:</strong> Kreativa Inc</p>
+              <p><strong>Bank Acc No:</strong> 2341293128491</p>
+            </div>
+
+            <div class="mb-6">
+              <label class="block font-semibold mb-1">Top up amount</label>
+              <input type="number" class="w-full border border-gray-400 px-4 py-2" placeholder="type amount" />
+            </div>
+
+            <div class="mb-6 space-y-1">
+              <p><strong>Amount</strong> <span class="ml-2">Rp 100.000</span></p>
+              <p><strong>Tax 11%</strong> <span class="ml-2">Rp 11.000</span></p>
+              <p><strong>Grand Total</strong> <span class="ml-2">Rp 111.000</span></p>
+            </div>
+
+            <div class="mb-6">
+              <label class="block font-semibold mb-2">Proof of payment</label>
+              <label class="w-24 h-24 bg-gray-300 flex items-center justify-center text-sm text-gray-700 cursor-pointer">
+                Add Photo
+                <input type="file" accept="image/*" class="hidden" />
+              </label>
+            </div>
+
+            <button type="submit" class="w-full bg-blue-600 text-white py-2 font-semibold rounded hover:bg-blue-700">Submit My Top Up</button>
+          </form>
+
+          <!-- Right Wallet Summary -->
+          <div class="space-y-6">
+            <div class="bg-[#1D0F39] text-white p-6 rounded-2xl w-full">
+              <p class="text-lg font-semibold">Irama Wallet</p>
+              <p class="text-sm text-gray-300 mb-4">Active</p>
+              <p class="text-2xl font-bold">Rp 300.000</p>
+            </div>
+
+            <div>
+              <h2 class="font-semibold text-lg mb-2">Follow Terms & Rules</h2>
+              <ul class="list-disc list-inside text-sm text-gray-800 space-y-1">
+                <li>lorem dolor si amet makan ayam biar sehat</li>
+                <li>lorem dolor si amet makan ayam biar sehat</li>
+                <li>lorem dolor si amet makan ayam biar sehat</li>
+                <li>lorem dolor si amet makan ayam biar sehat</li>
+                <li>lorem dolor si amet makan ayam biar sehat</li>
+                <li>lorem dolor si amet makan ayam biar sehat</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

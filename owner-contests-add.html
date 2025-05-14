@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="flex min-h-screen bg-white text-black">
+      <main class="flex-1 px-10 py-8">
+        <h1 class="text-3xl font-bold mb-6">Add new contest</h1>
+
+        <!-- Step Tabs -->
+        <div class="flex items-center gap-4 mb-8">
+          <button id="tab1" onclick="showStep(1)" class="step-tab px-4 py-2 rounded font-bold bg-[#1E144F] text-white">Step 1</button>
+          <button id="tab2" onclick="showStep(2)" class="step-tab px-4 py-2 rounded font-bold border border-black text-black">Step 2</button>
+          <button id="tab3" onclick="showStep(3)" class="step-tab px-4 py-2 rounded font-bold border border-black text-black">Step 3</button>
+        </div>
+
+        <!-- Step 1 -->
+        <div id="step1" class="step">
+          <h2 class="text-xl font-bold mb-4">Basic Info</h2>
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-24 h-24 bg-gray-300 flex items-center justify-center text-center text-sm font-bold">Add<br />Photo</div>
+            <button class="border border-black px-4 py-2 font-bold">Delete photo</button>
+          </div>
+          <input type="text" placeholder="Name" class="border border-black w-full p-2 mb-4" />
+          <select class="border border-black w-full p-2 mb-4">
+            <option>Select category</option>
+          </select>
+          <textarea placeholder="About" class="border border-black w-full p-2 mb-4 h-24"></textarea>
+          <input type="text" placeholder="Type your reference, enter to add" class="border border-black w-full p-2 mb-4" />
+          <input type="text" placeholder="Type your reference, enter to add" class="border border-black w-full p-2 mb-4" />
+          <button onclick="showStep(2)" type="button" class="bg-blue-600 text-white px-8 py-3 font-bold">Continue</button>
+        </div>
+
+        <!-- Step 2 -->
+        <div id="step2" class="step hidden">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <!-- Attachments -->
+            <div>
+              <h2 class="text-xl font-bold mb-4">Add attachments</h2>
+              <div class="flex items-center gap-4 mb-4">
+                <div class="w-24 h-24 bg-gray-300 flex items-center justify-center text-center text-sm font-bold">Add<br />Zip File</div>
+                <input type="text" value="Document A" class="border border-black w-full p-2" />
+              </div>
+              <div class="flex items-center gap-4 mb-4">
+                <div class="w-24 h-24 bg-gray-300 flex items-center justify-center text-center text-sm font-bold">Add<br />Zip File</div>
+                <input type="text" value="Presentation B" class="border border-black w-full p-2" />
+              </div>
+              <div class="flex items-center gap-4 mb-4">
+                <div class="w-24 h-24 bg-gray-300 flex items-center justify-center text-center text-sm font-bold">Add<br />Zip File</div>
+                <input type="text" value="Design Files C" class="border border-black w-full p-2" />
+              </div>
+              <button class="border border-black px-4 py-2 font-bold">Add more</button>
+            </div>
+
+            <!-- Deliverables -->
+            <div>
+              <h2 class="text-xl font-bold mb-4">Content deliverable</h2>
+              <select class="border border-black w-full p-2 mb-4">
+                <option>PDF</option>
+              </select>
+              <select class="border border-black w-full p-2 mb-4">
+                <option>DOCX</option>
+              </select>
+              <select class="border border-black w-full p-2 mb-4">
+                <option>PNG</option>
+              </select>
+              <select class="border border-black w-full p-2 mb-4">
+                <option>SVG</option>
+              </select>
+              <button class="border border-black px-4 py-2 font-bold">Add more</button>
+            </div>
+          </div>
+          <div class="mt-10">
+            <button onclick="showStep(3)" type="button" class="bg-blue-600 text-white px-8 py-3 font-bold">Continue</button>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div id="step3" class="step hidden">
+          <div class="flex flex-col md:flex-row gap-12">
+            <!-- Left -->
+            <div class="flex-1">
+              <div class="bg-[#1E144F] text-white p-6 rounded-2xl mb-6">
+                <p class="font-bold text-lg">Irama Wallet</p>
+                <p class="text-sm">Active</p>
+                <p class="text-3xl font-bold mt-2">Rp 18.000.000</p>
+              </div>
+              <div>
+                <h2 class="text-lg font-bold mb-2">Add Prize</h2>
+                <input type="text" placeholder="Type your prize" class="border border-black w-full p-2 mb-4" />
+                <button type="submit" class="bg-blue-600 text-white px-8 py-3 font-bold">Continue</button>
+              </div>
+            </div>
+
+            <!-- Right -->
+            <div class="w-full md:w-1/2">
+              <h2 class="text-lg font-bold mb-2">Follow Terms & Rules</h2>
+              <ul class="list-disc pl-5 space-y-2 text-sm">
+                <li>lorem dolor si amet makan ayam biar sehat</li>
+                <li>lorem dolor si amet makan ayam biar sehat</li>
+                <li>lorem dolor si amet makan ayam biar sehat</li>
+                <li>lorem dolor si amet makan ayam biar sehat</li>
+                <li>lorem dolor si amet makan ayam biar sehat</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script>
+      // Script untuk toggle antar step (tanpa framework)
+      function showStep(step) {
+        document.querySelectorAll(".step").forEach((s) => s.classList.add("hidden"));
+        document.getElementById("step" + step).classList.remove("hidden");
+
+        document.querySelectorAll(".step-tab").forEach((tab) => {
+          tab.classList.remove("bg-[#1E144F]", "text-white", "border", "border-black");
+          tab.classList.add("border", "border-black", "text-black");
+        });
+
+        const activeTab = document.getElementById("tab" + step);
+        activeTab.classList.remove("border", "border-black", "text-black");
+        activeTab.classList.add("bg-[#1E144F]", "text-white");
+      }
+    </script>
+  </body>
+</html>

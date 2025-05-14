@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="flex flex-col items-center justify-center min-h-screen p-6 bg-white">
+      <h1 class="text-3xl font-bold text-black mb-2">Sign Up Today</h1>
+      <h2 class="text-xl font-semibold text-black mb-8">Create your account</h2>
+
+      <div class="flex items-center gap-2 mb-6">
+        <div class="w-24 h-24 bg-gray-200 rounded-full flex items-center justify-center text-center text-sm font-semibold text-black">
+          <img src="your-image-path.jpg" alt="Profile" class="w-full h-full object-cover rounded-full" />
+        </div>
+        <button class="bg-red-600 text-white px-4 py-2 rounded-full text-sm">Delete Photo</button>
+      </div>
+
+      <form class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-2xl">
+        <input type="text" placeholder="Complete Name" class="border rounded-full px-6 py-3 text-sm font-semibold text-center" />
+        <select class="border rounded-full px-6 py-3 text-sm font-semibold text-center text-gray-500" defaultValue="">
+          <option value="" disabled>Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+        <input type="email" placeholder="Email Address" class="border rounded-full px-6 py-3 text-sm font-semibold text-center" />
+        <input type="tel" placeholder="Phone Number" class="border rounded-full px-6 py-3 text-sm font-semibold text-center" />
+
+        <input type="password" placeholder="Password" class="border rounded-full px-6 py-3 text-sm font-semibold text-center" />
+        <input type="password" placeholder="Password Confirmation" class="border rounded-full px-6 py-3 text-sm font-semibold text-center" />
+
+        <div class="col-span-1 flex items-center gap-2 border rounded-full px-6 py-3">
+          <input type="radio" name="role" value="contest_owner" checked />
+          <label class="text-sm font-semibold">As a contest owner</label>
+        </div>
+        <div class="col-span-1 flex items-center gap-2 border rounded-full px-6 py-3">
+          <input type="radio" name="role" value="designer" />
+          <label class="text-sm font-semibold">As a designer</label>
+        </div>
+        <button type="submit" class="bg-[#5A32EA] text-white font-semibold px-8 py-3 mt-8 rounded-full">Sign Up Now</button>
+
+        <div class="my-4 w-32 border-t border-gray-400"></div>
+
+        <button class="bg-[#5A32EA] text-white font-semibold px-8 py-3 rounded-full">Sign in</button>
+      </form>
+    </div>
+  </body>
+</html>

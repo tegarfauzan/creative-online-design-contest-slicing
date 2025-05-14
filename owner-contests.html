@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="flex min-h-screen bg-white text-black">
+      <!-- Sidebar -->
+      <aside class="w-64 bg-white border-r p-4 space-y-6">
+        <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">My Contests</a>
+        <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">My Wallet</a>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="flex-1 p-8 w-full">
+        <div class="flex justify-between items-start">
+          <h1 class="text-3xl font-bold mb-6">Contests</h1>
+          <section id="ProfileTop">
+            <div class="flex justify-between items-start mb-8">
+              <div class="flex items-center space-x-4">
+                <img src="https://via.placeholder.com/40" alt="User Avatar" class="w-10 h-10 rounded-full bg-gray-300" />
+                <div class="text-right">
+                  <p class="font-semibold">Irama Manji</p>
+                  <p class="text-sm">Role Owner</p>
+                  <a href="/" class="text-sm underline">Logout</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="p-8 bg-white text-black">
+          <div class="flex justify-end mb-6">
+            <a href="/owner/contests/add-steps" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Add new</a>
+          </div>
+
+          <!-- List of Contests -->
+          <div class="space-y-6">
+            <!-- Contest 1 -->
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between border-b pb-4 gap-4">
+              <div class="flex items-center gap-4">
+                <div class="w-20 h-20 bg-gray-300 rounded"></div>
+                <div>
+                  <p class="font-semibold">Landing page eat catering healthy</p>
+                  <p class="text-sm text-gray-600">Web Design</p>
+                </div>
+              </div>
+              <div class="flex flex-col md:flex-row items-start md:items-center gap-4">
+                <div class="text-sm"><span class="font-semibold mr-2">Open</span>142 submissions</div>
+                <div class="flex gap-2">
+                  <button class="border px-4 py-1 text-sm hover:bg-gray-100">Details</button>
+                  <button class="border px-4 py-1 text-sm hover:bg-gray-100">Manage</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contest 2 -->
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between border-b pb-4 gap-4">
+              <div class="flex items-center gap-4">
+                <div class="w-20 h-20 bg-gray-300 rounded"></div>
+                <div>
+                  <p class="font-semibold">Landing page eat catering healthy</p>
+                  <p class="text-sm text-gray-600">Web Design</p>
+                </div>
+              </div>
+              <div class="flex flex-col md:flex-row items-start md:items-center gap-4">
+                <div class="text-sm"><span class="font-semibold mr-2">Closed</span>142 submissions</div>
+                <div class="flex gap-2">
+                  <button class="border px-4 py-1 text-sm hover:bg-gray-100">Details</button>
+                  <button class="border px-4 py-1 text-sm hover:bg-gray-100">Manage</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contest 3 -->
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between border-b pb-4 gap-4">
+              <div class="flex items-center gap-4">
+                <div class="w-20 h-20 bg-gray-300 rounded"></div>
+                <div>
+                  <p class="font-semibold">Landing page eat catering healthy</p>
+                  <p class="text-sm text-gray-600">Web Design</p>
+                </div>
+              </div>
+              <div class="flex flex-col md:flex-row items-start md:items-center gap-4">
+                <div class="text-sm"><span class="font-semibold mr-2">Open</span>142 submissions</div>
+                <div class="flex gap-2">
+                  <button class="border px-4 py-1 text-sm hover:bg-gray-100">Details</button>
+                  <button class="border px-4 py-1 text-sm hover:bg-gray-100">Manage</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contest 4 -->
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between border-b pb-4 gap-4">
+              <div class="flex items-center gap-4">
+                <div class="w-20 h-20 bg-gray-300 rounded"></div>
+                <div>
+                  <p class="font-semibold">Landing page eat catering healthy</p>
+                  <p class="text-sm text-gray-600">Web Design</p>
+                </div>
+              </div>
+              <div class="flex flex-col md:flex-row items-start md:items-center gap-4">
+                <div class="text-sm"><span class="font-semibold mr-2">Closed</span>142 submissions</div>
+                <div class="flex gap-2">
+                  <button class="border px-4 py-1 text-sm hover:bg-gray-100">Details</button>
+                  <button class="border px-4 py-1 text-sm hover:bg-gray-100">Manage</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contest 5 -->
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between border-b pb-4 gap-4">
+              <div class="flex items-center gap-4">
+                <div class="w-20 h-20 bg-gray-300 rounded"></div>
+                <div>
+                  <p class="font-semibold">Landing page eat catering healthy</p>
+                  <p class="text-sm text-gray-600">Web Design</p>
+                </div>
+              </div>
+              <div class="flex flex-col md:flex-row items-start md:items-center gap-4">
+                <div class="text-sm"><span class="font-semibold mr-2">Open</span>142 submissions</div>
+                <div class="flex gap-2">
+                  <button class="border px-4 py-1 text-sm hover:bg-gray-100">Details</button>
+                  <button class="border px-4 py-1 text-sm hover:bg-gray-100">Manage</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

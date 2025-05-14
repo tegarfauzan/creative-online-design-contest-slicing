@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="flex min-h-screen bg-white text-black">
+      <!-- Sidebar -->
+      <aside class="w-64 bg-white border-r p-4 space-y-6">
+        <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">My Submissions</a>
+        <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">My Wallet</a>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="flex-1 p-8">
+        <div class="flex justify-between items-start">
+          <h1 class="text-3xl font-bold mb-6">withdraw Wallet</h1>
+          <section id="ProfileTop">
+            <div class="flex justify-between items-start mb-8">
+              <div class="flex items-center space-x-4">
+                <img src="https://via.placeholder.com/40" alt="User Avatar" class="w-10 h-10 rounded-full bg-gray-300" />
+                <div class="text-right">
+                  <p class="font-semibold">Irama Manji</p>
+                  <p class="text-sm">Role Designer</p>
+                  <a href="/" class="text-sm underline">Logout</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-6 py-8">
+          <div class="bg-gray-100 text-sm text-gray-700 px-4 py-3 mb-6 rounded">Withdrawal masih pending silahkan tunggu perusahaan mengirim uang kepada anda</div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Left Column -->
+            <div class="space-y-4 text-sm text-black">
+              <div class="flex justify-between">
+                <span class="font-medium">Requested At</span>
+                <span>25 Mar 2025</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="font-medium">Total Amount</span>
+                <span>Rp 22.190.000</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="font-medium">Insurance</span>
+                <span>Included</span>
+              </div>
+              <div class="flex justify-between border-b pb-4">
+                <span class="font-medium">Status</span>
+                <span>Pending</span>
+              </div>
+
+              <div class="mt-4">
+                <h2 class="font-semibold mb-2">Send payment to</h2>
+                <div class="space-y-2">
+                  <div class="flex justify-between">
+                    <span class="text-gray-600">Bank Name</span>
+                    <span>BWA Asia</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-gray-600">Bank Account</span>
+                    <span>Arina Maritia</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-gray-600">Bank Acc No</span>
+                    <span>19928308883912</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="space-y-6">
+              <div class="flex items-center gap-4">
+                <div class="w-24 h-24 bg-gray-300 flex-shrink-0 rounded"></div>
+                <div>
+                  <p class="font-medium">Manual Payment</p>
+                  <p class="text-sm text-gray-600">High Standard</p>
+                </div>
+              </div>
+
+              <div class="border-t pt-4">
+                <!-- Proof section hidden because status is Pending -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

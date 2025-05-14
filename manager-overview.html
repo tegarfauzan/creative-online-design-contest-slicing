@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="flex min-h-screen bg-gray-100 text-black">
+      <!-- Sidebar -->
+      <aside class="w-64 bg-white border-r p-4 space-y-6">
+        <!-- Overview -->
+        <div>
+          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Overview</a>
+        </div>
+
+        <!-- Contest -->
+        <div class="mt-4 space-y-1">
+          <p class="font-semibold">Contest</p>
+          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Categories</a>
+          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Contests</a>
+        </div>
+
+        <!-- Members -->
+        <div class="mt-4 space-y-1">
+          <p class="font-semibold">Members</p>
+          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Owners</a>
+          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Designers</a>
+        </div>
+
+        <!-- Payment -->
+        <div class="mt-4 space-y-1">
+          <p class="font-semibold">Payment</p>
+          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Transactions</a>
+          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Wallets</a>
+        </div>
+
+        <!-- Users -->
+        <div class="mt-4 space-y-1">
+          <p class="font-semibold">Users</p>
+          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Users</a>
+          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Assign Role</a>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="flex-1 p-6 space-y-8">
+        <!-- Header -->
+        <div class="flex justify-between items-start">
+          <h1 class="text-2xl font-bold">Overview</h1>
+          <section id="ProfileTop">
+            <div class="flex justify-between items-start mb-8">
+              <div class="flex items-center space-x-4">
+                <img src="https://via.placeholder.com/40" alt="User Avatar" class="w-10 h-10 rounded-full bg-gray-300" />
+                <div class="text-right">
+                  <p class="font-semibold">Ayunda Shayna</p>
+                  <p class="text-sm">Role Manager</p>
+                  <a href="/" class="text-sm underline">Logout</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Summary Grid -->
+        <div class="grid grid-cols-3 gap-4">
+          <div class="border p-4 bg-white">
+            <div class="text-lg font-semibold">Rp 190.394.593</div>
+            <div class="text-sm text-gray-600">Prize</div>
+          </div>
+          <div class="border p-4 bg-white">
+            <div class="text-lg font-semibold">189.3948</div>
+            <div class="text-sm text-gray-600">Contests</div>
+          </div>
+          <div class="border p-4 bg-white">
+            <div class="text-lg font-semibold">193.493</div>
+            <div class="text-sm text-gray-600">Owners</div>
+          </div>
+          <div class="border p-4 bg-white">
+            <div class="text-lg font-semibold">22.394</div>
+            <div class="text-sm text-gray-600">Designers</div>
+          </div>
+          <div class="border p-4 bg-white">
+            <div class="text-lg font-semibold">22.394</div>
+            <div class="text-sm text-gray-600">Categories</div>
+          </div>
+          <div class="border p-4 bg-white">
+            <div class="text-lg font-semibold">22.394</div>
+            <div class="text-sm text-gray-600">Testimonials</div>
+          </div>
+        </div>
+
+        <!-- Latest Contests & Withdrawals -->
+        <div class="grid grid-cols-2 gap-6">
+          <!-- Latest Contests -->
+          <div>
+            <h2 class="text-lg font-bold mb-4">Latest Contests</h2>
+            <ul class="space-y-4">
+              <li class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-gray-300"></div>
+                <div>
+                  <div class="font-semibold">Carolina John</div>
+                  <div class="text-sm">Rp 5.190.000</div>
+                </div>
+              </li>
+              <li class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-gray-300"></div>
+                <div>
+                  <div class="font-semibold">Carolina John</div>
+                  <div class="text-sm">Rp 5.190.000</div>
+                </div>
+              </li>
+              <li class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-gray-300"></div>
+                <div>
+                  <div class="font-semibold">Carolina John</div>
+                  <div class="text-sm">Rp 5.190.000</div>
+                </div>
+              </li>
+              <li class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-gray-300"></div>
+                <div>
+                  <div class="font-semibold">Carolina John</div>
+                  <div class="text-sm">Rp 5.190.000</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Latest Withdrawals -->
+          <div>
+            <h2 class="text-lg font-bold mb-4">Latest Withdrawals</h2>
+            <ul class="space-y-4">
+              <li class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-gray-300"></div>
+                <div class="flex-1">
+                  <div class="font-semibold">Samarina</div>
+                  <div class="text-sm text-gray-500">5 May 2022</div>
+                </div>
+                <div class="font-semibold">Rp 12.405.333</div>
+              </li>
+              <li class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-gray-300"></div>
+                <div class="flex-1">
+                  <div class="font-semibold">Samarina</div>
+                  <div class="text-sm text-gray-500">5 May 2022</div>
+                </div>
+                <div class="font-semibold">Rp 12.405.333</div>
+              </li>
+              <li class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-gray-300"></div>
+                <div class="flex-1">
+                  <div class="font-semibold">Samarina</div>
+                  <div class="text-sm text-gray-500">5 May 2022</div>
+                </div>
+                <div class="font-semibold">Rp 12.405.333</div>
+              </li>
+              <li class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-gray-300"></div>
+                <div class="flex-1">
+                  <div class="font-semibold">Samarina</div>
+                  <div class="text-sm text-gray-500">5 May 2022</div>
+                </div>
+                <div class="font-semibold">Rp 12.405.333</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

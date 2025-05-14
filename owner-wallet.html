@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="flex min-h-screen font-sans">
+      <!-- Sidebar -->
+      <aside class="w-64 bg-white border-r p-4 space-y-6">
+        <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">My Contests</a>
+        <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">My Wallet</a>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="flex-1 flex flex-col p-8">
+        <!-- Header -->
+        <div class="flex justify-between items-start">
+          <h1 class="text-2xl font-bold mb-4">My Wallet</h1>
+          <!-- User Info -->
+          <section id="ProfileTop">
+            <div class="flex justify-between items-start mb-8">
+              <div class="flex items-center space-x-4">
+                <img src="https://via.placeholder.com/40" alt="User Avatar" class="w-10 h-10 rounded-full bg-gray-300" />
+                <div class="text-right">
+                  <p class="font-semibold">Irama Manji</p>
+                  <p class="text-sm">Role Owner</p>
+                  <a href="/" class="text-sm underline">Logout</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center gap-[72px]">
+          <!-- Wallet Info -->
+          <div class="bg-[#10042C] text-white rounded-2xl px-6 py-6 mb-6 w-96 flex-1">
+            <div class="font-bold">Irama Wallet</div>
+            <div class="text-sm text-violet-200">Active</div>
+            <div class="text-3xl font-bold mt-4">Rp 18.000.000</div>
+          </div>
+
+          <!-- Description & Button -->
+          <div class="mb-8 flex flex-col justify-center flex-1 gap-[25px]">
+            <p class="text-center">You are owner role so you can topup wallet to open new contests</p>
+            <a href="/designer/wallet/withdrawal" class="bg-[#4F46E5] mx-auto text-white px-4 py-2 rounded font-semibold text-sm"> Topup Wallet </a>
+          </div>
+        </div>
+
+        <!-- Transactions -->
+        <h2 class="text-xl font-bold mb-4">Transactions</h2>
+
+        <div class="space-y-4">
+          <!-- Transaction 1 -->
+          <div class="flex items-center justify-between border-b pb-4 flex-wrap md:flex-nowrap gap-4">
+            <div class="flex items-center gap-4 min-w-[278px] grow">
+              <div class="w-12 h-12 bg-gray-300 rounded-xl"></div>
+              <div>
+                <p class="font-bold">Top Up</p>
+                <p class="text-sm">15 May 2030</p>
+              </div>
+            </div>
+            <p class="font-bold min-w-[164px] grow">Rp 18.000.000</p>
+            <div class="min-w-[179px] grow">
+              <p class="text-sm font-semibold text-yellow-600">Pending</p>
+              <p class="text-sm">Manual Payment</p>
+            </div>
+            <div class="min-w-[120px] grow">
+              <button class="border border-black px-3 py-1 text-sm font-semibold">Details</button>
+            </div>
+          </div>
+
+          <!-- Transaction 2 -->
+          <div class="flex items-center justify-between border-b pb-4 flex-wrap md:flex-nowrap gap-4">
+            <div class="flex items-center gap-4 min-w-[278px] grow">
+              <div class="w-12 h-12 bg-gray-300 rounded-xl"></div>
+              <div>
+                <p class="font-bold">Contest</p>
+                <p class="text-sm">15 May 2030</p>
+              </div>
+            </div>
+            <p class="font-bold min-w-[164px] grow">- Rp 66.000.000</p>
+            <div class="min-w-[179px] grow">
+              <p class="text-sm font-semibold text-green-600">Approved</p>
+              <p class="text-sm">Manual Payment</p>
+            </div>
+            <div class="min-w-[120px] grow">
+              <button class="border border-black px-3 py-1 text-sm font-semibold">Details</button>
+            </div>
+          </div>
+
+          <!-- Transaction 3 -->
+          <div class="flex items-center justify-between border-b pb-4 flex-wrap md:flex-nowrap gap-4">
+            <div class="flex items-center gap-4 min-w-[278px] grow">
+              <div class="w-12 h-12 bg-gray-300 rounded-xl"></div>
+              <div>
+                <p class="font-bold">Top Up</p>
+                <p class="text-sm">15 May 2030</p>
+              </div>
+            </div>
+            <p class="font-bold min-w-[164px] grow">Rp 66.000.000</p>
+            <div class="min-w-[179px] grow">
+              <p class="text-sm font-semibold text-yellow-600">Declined</p>
+              <p class="text-sm">Manual Payment</p>
+            </div>
+            <div class="min-w-[120px] grow">
+              <button class="border border-black px-3 py-1 text-sm font-semibold">Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
