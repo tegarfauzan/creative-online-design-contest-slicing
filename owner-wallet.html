@@ -9,9 +9,15 @@
   <body>
     <div class="flex min-h-screen font-sans">
       <!-- Sidebar -->
-      <aside class="w-64 bg-white border-r p-4 space-y-6">
-        <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">My Contests</a>
-        <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">My Wallet</a>
+      <aside class="w-64 border-r p-4 h-screen overflow-y-auto [&::-webkit-scrollbar]:hidden">
+        <ul class="space-y-6">
+          <li class="group">
+            <a href="owner-contests.html" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white group-[&.active]:bg-blue-600 group-[&.active]:text-white transition-all duration-300">My Contests</a>
+          </li>
+          <li class="group active">
+            <a href="owner-wallet.html" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white group-[&.active]:bg-blue-600 group-[&.active]:text-white transition-all duration-300">My Wallet</a>
+          </li>
+        </ul>
       </aside>
 
       <!-- Main Content -->
@@ -45,7 +51,7 @@
           <!-- Description & Button -->
           <div class="mb-8 flex flex-col justify-center flex-1 gap-[25px]">
             <p class="text-center">You are owner role so you can topup wallet to open new contests</p>
-            <a href="/designer/wallet/withdrawal" class="bg-[#4F46E5] mx-auto text-white px-4 py-2 rounded font-semibold text-sm"> Topup Wallet </a>
+            <a href="owner-wallet-topup.html" class="bg-[#4F46E5] mx-auto text-white px-4 py-2 rounded font-semibold text-sm"> Topup Wallet </a>
           </div>
         </div>
 

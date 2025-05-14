@@ -9,13 +9,19 @@
   <body>
     <div class="flex min-h-screen bg-white">
       <!-- Sidebar -->
-      <aside class="w-64 bg-white border-r p-4 space-y-6">
-        <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">My Submissions</a>
-        <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">My Wallet</a>
+      <aside class="w-64 border-r p-4 h-screen overflow-y-auto [&::-webkit-scrollbar]:hidden">
+        <ul class="space-y-6">
+          <li class="group active">
+            <a href="designer-submissions.html" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white group-[&.active]:bg-blue-600 group-[&.active]:text-white transition-all duration-300">My Submissions</a>
+          </li>
+          <li class="group">
+            <a href="designer-wallet.html" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white group-[&.active]:bg-blue-600 group-[&.active]:text-white transition-all duration-300">My Wallet</a>
+          </li>
+        </ul>
       </aside>
 
       <!-- Content -->
-      <main class="flex-1 p-8">
+      <main class="flex-1 p-8 h-screen overflow-y-auto">
         <div class="flex justify-between items-start mb-8">
           <h1 class="text-2xl font-bold">My submissions</h1>
           <section id="ProfileTop">
@@ -47,7 +53,7 @@
             <p class="font-semibold min-w-[58px] grow">Open</p>
             <p class="font-semibold min-w-[181px] grow">142 submissions</p>
             <div class="min-w-[103px] flex justify-center">
-              <a href="/designer/submissions/details" class="border border-black px-4 py-2 font-semibold">Details</a>
+              <a href="designer-submission-details.html" class="border border-black px-4 py-2 font-semibold">Details</a>
             </div>
           </div>
 
@@ -64,7 +70,7 @@
             <p class="font-semibold min-w-[58px] grow">Open</p>
             <p class="font-semibold min-w-[181px] grow">142 submissions</p>
             <div class="min-w-[103px] flex justify-center">
-              <a href="/designer/submissions/details" class="border border-black px-4 py-2 font-semibold">Details</a>
+              <a href="designer-submission-details.html" class="border border-black px-4 py-2 font-semibold">Details</a>
             </div>
           </div>
 
@@ -81,7 +87,7 @@
             <p class="font-semibold min-w-[58px] grow">Closed</p>
             <p class="font-semibold min-w-[181px] grow">142 submissions</p>
             <div class="min-w-[103px] flex justify-center">
-              <a href="/designer/submissions/details" class="border border-black px-4 py-2 font-semibold">Details</a>
+              <a href="designer-submission-details-eliminated.html" class="border border-black px-4 py-2 font-semibold">Details</a>
             </div>
           </div>
 
@@ -98,7 +104,7 @@
             <p class="font-semibold min-w-[58px] grow">Closed</p>
             <p class="font-semibold min-w-[181px] grow">142 submissions</p>
             <div class="min-w-[103px] flex justify-center">
-              <a href="/designer/submissions/details" class="border border-black px-4 py-2 font-semibold">Details</a>
+              <a href="designer-submission-details-eliminated.html" class="border border-black px-4 py-2 font-semibold">Details</a>
             </div>
           </div>
 
@@ -115,7 +121,7 @@
             <p class="font-semibold min-w-[58px] grow">Closed</p>
             <p class="font-semibold min-w-[181px] grow">142 submissions</p>
             <div class="min-w-[103px] flex justify-center">
-              <a href="/designer/submissions/details" class="border border-black px-4 py-2 font-semibold">Details</a>
+              <a href="designer-submission-details-winner.html" class="border border-black px-4 py-2 font-semibold">Details</a>
             </div>
           </div>
         </div>

@@ -10,10 +10,16 @@
     <div class="p-8 max-w-5xl mx-auto text-black">
       <div class="flex gap-4 mb-10">
         <!-- Sidebar -->
-        <aside class="w-64 bg-white border-r p-4 space-y-6">
-          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">My Contests</a>
-          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">My Wallet</a>
-        </aside>
+        <aside class="w-64 border-r p-4 h-screen overflow-y-auto [&::-webkit-scrollbar]:hidden">
+        <ul class="space-y-6">
+          <li class="group">
+            <a href="owner-contests.html" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white group-[&.active]:bg-blue-600 group-[&.active]:text-white transition-all duration-300">My Contests</a>
+          </li>
+          <li class="group">
+            <a href="owner-wallet.html" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white group-[&.active]:bg-blue-600 group-[&.active]:text-white transition-all duration-300">My Wallet</a>
+          </li>
+        </ul>
+      </aside>
         <div class="flex-1">
           <div class="flex justify-between items-start mb-8">
             <div class="flex gap-4 items-start">

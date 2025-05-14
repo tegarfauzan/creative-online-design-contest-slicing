@@ -8,41 +8,51 @@
   </head>
   <body>
     <div class="flex min-h-screen bg-white text-black">
-      <aside class="w-64 bg-white border-r p-4 space-y-6">
-        <!-- Overview -->
-        <div>
-          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Overview</a>
-        </div>
+      <aside class="w-64 border-r p-4 h-screen overflow-y-auto [&::-webkit-scrollbar]:hidden">
+        <ul class="space-y-6">
+          <!-- Overview -->
+          <li class="group">
+            <a href="manager-overview.html" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white group-[&.active]:bg-blue-600 group-[&.active]:text-white transition-all duration-300">Overview</a>
+          </li>
 
-        <!-- Contest -->
-        <div class="mt-4 space-y-1">
-          <p class="font-semibold">Contest</p>
-          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Categories</a>
-          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Contests</a>
-        </div>
+          <!-- Contest -->
+          <li class="group">
+            <p class="font-semibold mb-1">Contest</p>
+            <ul class="space-y-1">
+              <li class="group"><a href="manager-category.html" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white group-[&.active]:bg-blue-600 group-[&.active]:text-white transition-all duration-300">Categories</a></li>
+              <li class="group"><a href="manager-contests.html" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white group-[&.active]:bg-blue-600 group-[&.active]:text-white transition-all duration-300">Contests</a></li>
+            </ul>
+          </li>
 
-        <!-- Members -->
-        <div class="mt-4 space-y-1">
-          <p class="font-semibold">Members</p>
-          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Owners</a>
-          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Designers</a>
-        </div>
+          <!-- Members -->
+          <li class="group">
+            <p class="font-semibold mb-1">Members</p>
+            <ul class="space-y-1">
+              <li class="group"><a href="manager-owner.html" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white group-[&.active]:bg-blue-600 group-[&.active]:text-white transition-all duration-300">Owners</a></li>
+              <li class="group"><a href="manager-designer.html" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white group-[&.active]:bg-blue-600 group-[&.active]:text-white transition-all duration-300">Designers</a></li>
+            </ul>
+          </li>
 
-        <!-- Payment -->
-        <div class="mt-4 space-y-1">
-          <p class="font-semibold">Payment</p>
-          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Transactions</a>
-          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Wallets</a>
-        </div>
+          <!-- Payment -->
+          <li class="group">
+            <p class="font-semibold mb-1">Payment</p>
+            <ul class="space-y-1">
+              <li class="group active"><a href="manager-transactions.html" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white group-[&.active]:bg-blue-600 group-[&.active]:text-white transition-all duration-300">Transactions</a></li>
+              <li class="group"><a href="manager-wallets.html" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white group-[&.active]:bg-blue-600 group-[&.active]:text-white transition-all duration-300">Wallets</a></li>
+            </ul>
+          </li>
 
-        <!-- Users -->
-        <div class="mt-4 space-y-1">
-          <p class="font-semibold">Users</p>
-          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Users</a>
-          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Assign Role</a>
-        </div>
+          <!-- Users -->
+          <li class="group">
+            <p class="font-semibold mb-1">Users</p>
+            <ul class="space-y-1">
+              <li class="group"><a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white group-[&.active]:bg-blue-600 group-[&.active]:text-white transition-all duration-300">Users</a></li>
+              <li class="group"><a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white group-[&.active]:bg-blue-600 group-[&.active]:text-white transition-all duration-300">Assign Role</a></li>
+            </ul>
+          </li>
+        </ul>
       </aside>
-      <main class="flex-1 p-8">
+      <main class="flex-1 p-8 h-screen overflow-y-auto">
         <div class="flex justify-between items-start">
           <h1 class="text-3xl font-bold mb-6">Transactions</h1>
           <section id="ProfileTop">
@@ -85,7 +95,7 @@
               <p class="text-sm text-gray-500">Owner</p>
             </div>
 
-            <a href="#" class="border border-gray-800 text-sm px-3 py-1 rounded hover:bg-gray-100">Details</a>
+            <a href="manager-transactions-topup-pending.html" class="border border-gray-800 text-sm px-3 py-1 rounded hover:bg-gray-100">Details</a>
           </div>
 
           <!-- Transaction 2 -->
@@ -112,7 +122,6 @@
             <a href="#" class="border border-gray-800 text-sm px-3 py-1 rounded hover:bg-gray-100">Details</a>
           </div>
 
-          <!-- Copy dan sesuaikan untuk transaksi lainnya -->
           <!-- Transaction 3 - Declined -->
           <div class="flex items-center justify-between bg-white shadow-sm rounded-lg p-4">
             <div class="flex items-center space-x-4">
@@ -137,7 +146,84 @@
             <a href="#" class="border border-gray-800 text-sm px-3 py-1 rounded hover:bg-gray-100">Details</a>
           </div>
 
-          <!-- Sisanya copy dari atas sesuai kebutuhan -->
+          <div class="flex items-center justify-between bg-white shadow-sm rounded-lg p-4">
+            <div class="flex items-center space-x-4">
+              <div class="w-12 h-12 bg-gray-300 rounded-xl"></div>
+              <div>
+                <p class="font-semibold">Top Up</p>
+                <p class="text-sm text-gray-500">15 May 2030</p>
+              </div>
+            </div>
+
+            <div class="text-right">
+              <p class="font-semibold">Rp 18.000.000</p>
+              <p class="text-sm text-gray-500">Manual Payment</p>
+            </div>
+
+            <div class="text-right">
+              <p class="font-semibold text-yellow-600">Approved</p>
+              <p class="text-sm text-gray-500">Manual Payment</p>
+            </div>
+
+            <div class="text-right">
+              <p class="font-semibold">Arin Supina</p>
+              <p class="text-sm text-gray-500">Owner</p>
+            </div>
+
+            <a href="manager-transactions-topup-approved.html" class="border border-gray-800 text-sm px-3 py-1 rounded hover:bg-gray-100">Details</a>
+          </div>
+          <div class="flex items-center justify-between bg-white shadow-sm rounded-lg p-4">
+            <div class="flex items-center space-x-4">
+              <div class="w-12 h-12 bg-gray-300 rounded-xl"></div>
+              <div>
+                <p class="font-semibold">Top Up</p>
+                <p class="text-sm text-gray-500">15 May 2030</p>
+              </div>
+            </div>
+
+            <div class="text-right">
+              <p class="font-semibold">Rp 18.000.000</p>
+              <p class="text-sm text-gray-500">Manual Payment</p>
+            </div>
+
+            <div class="text-right">
+              <p class="font-semibold text-yellow-600">Pending</p>
+              <p class="text-sm text-gray-500">Manual Payment</p>
+            </div>
+
+            <div class="text-right">
+              <p class="font-semibold">Arin Supina</p>
+              <p class="text-sm text-gray-500">Owner</p>
+            </div>
+
+            <a href="manager-transactions-topup-pending.html" class="border border-gray-800 text-sm px-3 py-1 rounded hover:bg-gray-100">Details</a>
+          </div>
+          <div class="flex items-center justify-between bg-white shadow-sm rounded-lg p-4">
+            <div class="flex items-center space-x-4">
+              <div class="w-12 h-12 bg-gray-300 rounded-xl"></div>
+              <div>
+                <p class="font-semibold">Top Up</p>
+                <p class="text-sm text-gray-500">15 May 2030</p>
+              </div>
+            </div>
+
+            <div class="text-right">
+              <p class="font-semibold">Rp 18.000.000</p>
+              <p class="text-sm text-gray-500">Manual Payment</p>
+            </div>
+
+            <div class="text-right">
+              <p class="font-semibold text-yellow-600">Pending</p>
+              <p class="text-sm text-gray-500">Manual Payment</p>
+            </div>
+
+            <div class="text-right">
+              <p class="font-semibold">Arin Supina</p>
+              <p class="text-sm text-gray-500">Owner</p>
+            </div>
+
+            <a href="manager-transactions-topup-pending.html" class="border border-gray-800 text-sm px-3 py-1 rounded hover:bg-gray-100">Details</a>
+          </div>
         </div>
       </main>
     </div>

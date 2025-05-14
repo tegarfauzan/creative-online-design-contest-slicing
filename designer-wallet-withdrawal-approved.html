@@ -9,13 +9,19 @@
   <body>
     <div class="flex min-h-screen bg-white text-black">
       <!-- Sidebar -->
-      <aside class="w-64 bg-white border-r p-4 space-y-6">
-        <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">My Submissions</a>
-        <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">My Wallet</a>
+      <aside class="w-64 border-r p-4 h-screen overflow-y-auto [&::-webkit-scrollbar]:hidden">
+        <ul class="space-y-6">
+          <li class="group">
+            <a href="designer-submissions.html" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white group-[&.active]:bg-blue-600 group-[&.active]:text-white transition-all duration-300">My Submissions</a>
+          </li>
+          <li class="group">
+            <a href="designer-wallet.html" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white group-[&.active]:bg-blue-600 group-[&.active]:text-white transition-all duration-300">My Wallet</a>
+          </li>
+        </ul>
       </aside>
 
       <!-- Main Content -->
-      <main class="flex-1 p-8">
+      <main class="flex-1 p-8 h-screen overflow-y-auto">
         <div class="flex justify-between items-start">
           <h1 class="text-3xl font-bold mb-6">withdraw Wallet</h1>
           <section id="ProfileTop">

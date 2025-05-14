@@ -9,13 +9,19 @@
   <body>
     <div class="flex min-h-screen p-8 gap-12 font-sans text-black bg-white">
       <!-- Sidebar -->
-      <aside class="w-64 bg-white border-r p-4 space-y-6">
-        <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">My Submissions</a>
-        <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">My Wallet</a>
+      <aside class="w-64 border-r p-4 h-screen overflow-y-auto [&::-webkit-scrollbar]:hidden">
+        <ul class="space-y-6">
+          <li class="group">
+            <a href="designer-submissions.html" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white group-[&.active]:bg-blue-600 group-[&.active]:text-white transition-all duration-300">My Submissions</a>
+          </li>
+          <li class="group">
+            <a href="designer-wallet.html" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white group-[&.active]:bg-blue-600 group-[&.active]:text-white transition-all duration-300">My Wallet</a>
+          </li>
+        </ul>
       </aside>
 
       <!-- Main Content -->
-      <div class="flex flex-col w-full gap-12">
+      <div class="flex flex-col w-full gap-12 h-screen overflow-y-auto">
         <div class="flex items-center justify-between">
           <h1 class="text-2xl font-bold mb-6">withdraw Wallet</h1>
           <!-- Profile -->
@@ -36,25 +42,25 @@
         <div class="flex gap-12">
           <!-- Left Form Section -->
           <div class="flex-1">
-            <form class="space-y-4">
+            <form action="designer-wallet-withdrawal-pending.html" class="space-y-4">
               <div>
                 <label class="block font-semibold mb-1">top up amount</label>
-                <input type="text" placeholder="type amount" class="w-full border border-black px-4 py-2" />
+                <input type="text" placeholder="type amount" class="focus:outline-none w-full border border-black px-4 py-2" />
               </div>
 
               <div>
                 <label class="block font-semibold mb-1">your bank name</label>
-                <input type="text" placeholder="type bank name" class="w-full border border-black px-4 py-2" />
+                <input type="text" placeholder="type bank name" class="focus:outline-none w-full border border-black px-4 py-2" />
               </div>
 
               <div>
                 <label class="block font-semibold mb-1">your bank account name</label>
-                <input type="text" placeholder="type bank account" class="w-full border border-black px-4 py-2" />
+                <input type="text" placeholder="type bank account" class="focus:outline-none w-full border border-black px-4 py-2" />
               </div>
 
               <div>
                 <label class="block font-semibold mb-1">your bank acc no</label>
-                <input type="text" placeholder="type bank acc number" class="w-full border border-black px-4 py-2" />
+                <input type="text" placeholder="type bank acc number" class="focus:outline-none w-full border border-black px-4 py-2" />
               </div>
 
               <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-2">Request withdrawal now</button>

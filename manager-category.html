@@ -9,43 +9,53 @@
   <body>
     <div class="flex min-h-screen bg-white text-black">
       <!-- Sidebar -->
-      <aside class="w-64 bg-white border-r p-4 space-y-6">
-        <!-- Overview -->
-        <div>
-          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Overview</a>
-        </div>
+      <aside class="w-64 border-r p-4 h-screen overflow-y-auto [&::-webkit-scrollbar]:hidden">
+        <ul class="space-y-6">
+          <!-- Overview -->
+          <li class="group">
+            <a href="manager-overview.html" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white group-[&.active]:bg-blue-600 group-[&.active]:text-white transition-all duration-300">Overview</a>
+          </li>
 
-        <!-- Contest -->
-        <div class="mt-4 space-y-1">
-          <p class="font-semibold">Contest</p>
-          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Categories</a>
-          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Contests</a>
-        </div>
+          <!-- Contest -->
+          <li class="group">
+            <p class="font-semibold mb-1">Contest</p>
+            <ul class="space-y-1">
+              <li class="active group"><a href="manager-category.html" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white group-[&.active]:bg-blue-600 group-[&.active]:text-white transition-all duration-300">Categories</a></li>
+              <li class="group"><a href="manager-contests.html" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white group-[&.active]:bg-blue-600 group-[&.active]:text-white transition-all duration-300">Contests</a></li>
+            </ul>
+          </li>
 
-        <!-- Members -->
-        <div class="mt-4 space-y-1">
-          <p class="font-semibold">Members</p>
-          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Owners</a>
-          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Designers</a>
-        </div>
+          <!-- Members -->
+          <li class="group">
+            <p class="font-semibold mb-1">Members</p>
+            <ul class="space-y-1">
+              <li class="group"><a href="manager-owner.html" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white group-[&.active]:bg-blue-600 group-[&.active]:text-white transition-all duration-300">Owners</a></li>
+              <li class="group"><a href="manager-designer.html" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white group-[&.active]:bg-blue-600 group-[&.active]:text-white transition-all duration-300">Designers</a></li>
+            </ul>
+          </li>
 
-        <!-- Payment -->
-        <div class="mt-4 space-y-1">
-          <p class="font-semibold">Payment</p>
-          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Transactions</a>
-          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Wallets</a>
-        </div>
+          <!-- Payment -->
+          <li class="group">
+            <p class="font-semibold mb-1">Payment</p>
+            <ul class="space-y-1">
+              <li class="group"><a href="manager-transactions.html" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white group-[&.active]:bg-blue-600 group-[&.active]:text-white transition-all duration-300">Transactions</a></li>
+              <li class="group"><a href="manager-wallets.html" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white group-[&.active]:bg-blue-600 group-[&.active]:text-white transition-all duration-300">Wallets</a></li>
+            </ul>
+          </li>
 
-        <!-- Users -->
-        <div class="mt-4 space-y-1">
-          <p class="font-semibold">Users</p>
-          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Users</a>
-          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white">Assign Role</a>
-        </div>
+          <!-- Users -->
+          <li class="group">
+            <p class="font-semibold mb-1">Users</p>
+            <ul class="space-y-1">
+              <li class="group"><a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white group-[&.active]:bg-blue-600 group-[&.active]:text-white transition-all duration-300">Users</a></li>
+              <li class="group"><a href="#" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white group-[&.active]:bg-blue-600 group-[&.active]:text-white transition-all duration-300">Assign Role</a></li>
+            </ul>
+          </li>
+        </ul>
       </aside>
 
       <!-- Main content -->
-      <main class="flex-1 p-8 w-full">
+      <main class="flex-1 p-8 w-full h-screen overflow-y-auto">
         <div class="flex justify-between items-start">
           <h1 class="text-3xl font-bold mb-6">Categories</h1>
           <section id="ProfileTop">
@@ -61,8 +71,9 @@
             </div>
           </section>
         </div>
-
-        <a href="#" class="bg-blue-600 text-white px-6 py-2 mb-6 inline-block"> Add new </a>
+        <div class="flex justify-end">
+          <a href="manager-category-add.html" class="bg-blue-600 text-white px-6 py-2 mb-6 inline-block"> Add new </a>
+        </div>
 
         <div class="space-y-4">
           <!-- Category 1 -->
@@ -77,7 +88,7 @@
             <p class="font-semibold">193 contests</p>
             <div class="flex gap-2">
               <button class="border px-4 py-1">Details</button>
-              <a href="#" class="border px-4 py-1">Edit</a>
+              <a href="manager-category-edit.html" class="border px-4 py-1">Edit</a>
               <button class="border px-4 py-1">Delete</button>
             </div>
           </div>
@@ -94,7 +105,7 @@
             <p class="font-semibold">193 contests</p>
             <div class="flex gap-2">
               <button class="border px-4 py-1">Details</button>
-              <a href="#" class="border px-4 py-1">Edit</a>
+              <a href="manager-category-edit.html" class="border px-4 py-1">Edit</a>
               <button class="border px-4 py-1">Delete</button>
             </div>
           </div>
@@ -111,7 +122,7 @@
             <p class="font-semibold">193 contests</p>
             <div class="flex gap-2">
               <button class="border px-4 py-1">Details</button>
-              <a href="#" class="border px-4 py-1">Edit</a>
+              <a href="manager-category-edit.html" class="border px-4 py-1">Edit</a>
               <button class="border px-4 py-1">Delete</button>
             </div>
           </div>
@@ -128,7 +139,7 @@
             <p class="font-semibold">193 contests</p>
             <div class="flex gap-2">
               <button class="border px-4 py-1">Details</button>
-              <a href="#" class="border px-4 py-1">Edit</a>
+              <a href="manager-category-edit.html" class="border px-4 py-1">Edit</a>
               <button class="border px-4 py-1">Delete</button>
             </div>
           </div>
@@ -145,7 +156,7 @@
             <p class="font-semibold">193 contests</p>
             <div class="flex gap-2">
               <button class="border px-4 py-1">Details</button>
-              <a href="#" class="border px-4 py-1">Edit</a>
+              <a href="manager-category-edit.html" class="border px-4 py-1">Edit</a>
               <button class="border px-4 py-1">Delete</button>
             </div>
           </div>
