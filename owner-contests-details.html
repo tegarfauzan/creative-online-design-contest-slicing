@@ -7,6 +7,141 @@
     <title></title>
   </head>
   <body>
-    
+    <div class="p-6 max-w-5xl mx-auto text-black">
+      <!-- Header -->
+      <div class="flex justify-between items-center mb-4">
+        <div>
+          <p class="text-sm text-gray-600">Contest details - category Web Design</p>
+          <h1 class="text-2xl font-bold leading-snug">Landing Page design for Saas Digital Marketing Techno</h1>
+        </div>
+        <section id="ProfileTop">
+          <div class="flex justify-between items-start mb-8">
+            <div class="flex items-center space-x-4">
+              <img src="https://via.placeholder.com/40" alt="User Avatar" class="w-10 h-10 rounded-full bg-gray-300" />
+              <div class="text-right">
+                <p class="font-semibold">Irama Manji</p>
+                <p class="text-sm">Role Owner</p>
+                <a href="/" class="text-sm underline">Logout</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Image Placeholder -->
+      <div class="w-full h-64 bg-gray-300 mb-6"></div>
+
+      <!-- Tabs -->
+      <div class="flex gap-2 mb-6">
+        <button data-tab-button="brief" class="px-4 py-2 border text-sm font-semibold bg-black text-white">Tabs Brief</button>
+        <button data-tab-button="submissions" class="px-4 py-2 border text-sm font-semibold">Tabs Submissions</button>
+        <button data-tab-button="others" class="px-4 py-2 border text-sm font-semibold">Tabs Others</button>
+      </div>
+
+      <!-- Tab Contents -->
+      <div data-tab-content="brief">
+        <!-- About -->
+        <div class="space-y-6">
+          <div>
+            <h3 class="font-bold mb-1">About</h3>
+            <p class="text-sm text-gray-800">We are looking at redesigning the existing cover pages for the field service reports we submit to Customers. The same cover is utilized for different types of reports, so the Title and Subtitle lines are mandatory. The design should be minimalistic but modern. Preference is towards "less speak more" approach, as such the design should not be heavy in graphics, etc. The company standard font is Montserrat.</p>
+          </div>
+
+          <!-- References -->
+          <div>
+            <h3 class="font-bold mb-1">References</h3>
+            <ul class="list-disc pl-5 text-sm space-y-1">
+              <li>lorem dolor si amet makan ayam biar sehat</li>
+              <li>lorem dolor si amet makan ayam biar sehat</li>
+              <li>lorem dolor si amet makan ayam biar sehat</li>
+              <li>lorem dolor si amet makan ayam biar sehat</li>
+              <li>lorem dolor si amet makan ayam biar sehat</li>
+            </ul>
+          </div>
+
+          <!-- Attachments -->
+          <div>
+            <h3 class="font-bold mb-1">Contest Attachments</h3>
+            <p class="text-sm text-gray-800 mb-2">Download the assets below to support your work</p>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+              <div class="flex items-center gap-3 border rounded p-3">
+                <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                <div>
+                  <p class="text-sm font-semibold">Nama Asset Logo Misal</p>
+                  <button class="text-xs text-blue-600 hover:underline">Download</button>
+                </div>
+              </div>
+              <!-- Ulangi 4x lagi -->
+            </div>
+          </div>
+
+          <!-- Deliverables -->
+          <div>
+            <h3 class="font-bold mb-1">Content Deliverable</h3>
+            <p class="text-sm text-gray-800 mb-2">Once you win please provide these files</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div class="flex items-center gap-3 border rounded p-3">
+                <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                <p class="text-sm font-semibold">Master .FIG</p>
+              </div>
+              <div class="flex items-center gap-3 border rounded p-3">
+                <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                <p class="text-sm font-semibold">Prototype</p>
+              </div>
+              <div class="flex items-center gap-3 border rounded p-3">
+                <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                <p class="text-sm font-semibold">Preview .PNG</p>
+              </div>
+              <div class="flex items-center gap-3 border rounded p-3">
+                <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                <p class="text-sm font-semibold">Fonts</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Prize -->
+          <div>
+            <h3 class="text-sm font-bold mb-1">Prize</h3>
+            <p class="text-2xl font-bold text-black">Rp 190.000.000</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Submissions -->
+      <div data-tab-content="submissions" class="hidden">
+        <div class="flex justify-end mb-4">
+          <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded text-sm font-semibold">Submit Design</button>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+          <div class="w-full aspect-square bg-gray-300 flex items-center justify-center text-center text-sm underline">Preview Image</div>
+          <!-- Tambahkan 7 div lagi seperti di atas -->
+        </div>
+      </div>
+
+      <!-- Others -->
+      <div data-tab-content="others" class="hidden">
+        <div class="text-sm text-gray-500">No additional content.</div>
+      </div>
+    </div>
+    <script defer>
+      document.addEventListener("DOMContentLoaded", () => {
+        const tabs = document.querySelectorAll("[data-tab-button]");
+        const contents = document.querySelectorAll("[data-tab-content]");
+
+        tabs.forEach((button) => {
+          button.addEventListener("click", () => {
+            const target = button.getAttribute("data-tab-button");
+
+            // Remove active state
+            tabs.forEach((btn) => btn.classList.remove("bg-black", "text-white"));
+            contents.forEach((content) => content.classList.add("hidden"));
+
+            // Set active state
+            button.classList.add("bg-black", "text-white");
+            document.querySelector(`[data-tab-content="${target}"]`).classList.remove("hidden");
+          });
+        });
+      });
+    </script>
   </body>
 </html>

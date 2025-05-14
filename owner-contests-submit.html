@@ -6,5 +6,66 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title></title>
   </head>
-  <body></body>
+  <body>
+    <div class="bg-white text-black">
+      <div class="p-6 max-w-4xl mx-auto">
+        <!-- Contest Header -->
+        <div class="flex items-start gap-6 mb-12">
+          <div class="w-24 h-24 bg-gray-300 flex items-center justify-center text-xs underline">Preview Image</div>
+          <div>
+            <p class="text-sm text-gray-500 mb-1">Submit your work</p>
+            <h2 class="text-xl font-bold leading-snug">Landing Page design for Saas Digital Marketing Techno</h2>
+            <p class="text-sm text-gray-600 mt-1">by Agency Shayna</p>
+          </div>
+        </div>
+
+        <!-- Upload Area -->
+        <div class="mb-8">
+          <label for="design-upload" id="design-label" class="block w-full h-72 bg-gray-300 border-2 border-dashed border-gray-400 flex items-center justify-center text-sm text-center cursor-pointer underline"> Add your design work </label>
+          <input type="file" id="design-upload" accept="image/*" class="hidden" />
+        </div>
+
+        <!-- Description -->
+        <div class="mb-6">
+          <label for="description" class="block text-sm font-medium mb-2"> Tell about your work </label>
+          <textarea id="description" rows="5" class="w-full border rounded px-3 py-2 text-sm" placeholder="Describe your design..."></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button id="submit-btn" class="bg-blue-600 text-white px-6 py-2 rounded text-sm font-semibold hover:bg-blue-700">Submit Now</button>
+      </div>
+    </div>
+    <script defer>
+      document.addEventListener("DOMContentLoaded", function () {
+        const designInput = document.getElementById("design-upload");
+        const designLabel = document.getElementById("design-label");
+        const descriptionInput = document.getElementById("description");
+        const submitBtn = document.getElementById("submit-btn");
+
+        let selectedFile = null;
+
+        designInput.addEventListener("change", function (e) {
+          const file = e.target.files[0];
+          if (file) {
+            selectedFile = file;
+            designLabel.textContent = file.name;
+            designLabel.classList.remove("underline");
+            designLabel.classList.add("font-medium", "text-black");
+          }
+        });
+
+        submitBtn.addEventListener("click", function () {
+          const description = descriptionInput.value.trim();
+
+          if (!selectedFile || !description) {
+            alert("Please upload your design and write a description.");
+            return;
+          }
+
+          console.log("Submitting:", { selectedFile, description });
+          alert("Design submitted successfully!");
+        });
+      });
+    </script>
+  </body>
 </html>
