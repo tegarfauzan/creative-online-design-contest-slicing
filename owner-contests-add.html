@@ -8,6 +8,16 @@
   </head>
   <body>
     <div class="flex min-h-screen bg-white text-black">
+      <aside class="w-64 border-r p-4 h-screen overflow-y-auto [&::-webkit-scrollbar]:hidden">
+        <ul class="space-y-6">
+          <li class="group">
+            <a href="owner-contests.html" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white group-[&.active]:bg-blue-600 group-[&.active]:text-white transition-all duration-300">My Contests</a>
+          </li>
+          <li class="group">
+            <a href="owner-wallet.html" class="block py-2 px-4 rounded hover:bg-blue-600 hover:text-white group-[&.active]:bg-blue-600 group-[&.active]:text-white transition-all duration-300">My Wallet</a>
+          </li>
+        </ul>
+      </aside>
       <form action="owner-contests-add-success.html">
         <main class="flex-1 px-10 py-8">
           <h1 class="text-3xl font-bold mb-6">Add new contest</h1>
@@ -20,10 +30,10 @@
           </div>
 
           <!-- Step 1 -->
-          <div id="step1" class="step">
+          <div id="step1" class="step w-[406px]">
             <h2 class="text-xl font-bold mb-4">Basic Info</h2>
             <div class="flex items-center gap-4 mb-4">
-              <div class="w-24 h-24 bg-gray-300 flex items-center justify-center text-center text-sm font-bold">Add<br />Photo</div>
+              <div class="w-[100px] h-[100px] shrink-0 bg-gray-300 flex items-center justify-center text-center text-sm font-bold">Add<br />Photo</div>
               <button class="border border-black px-4 py-2 font-bold">Delete photo</button>
             </div>
             <input type="text" placeholder="Name" class="border border-black w-full p-2 mb-4" />
@@ -33,7 +43,9 @@
             <textarea placeholder="About" class="border border-black w-full p-2 mb-4 h-24"></textarea>
             <input type="text" placeholder="Type your reference, enter to add" class="border border-black w-full p-2 mb-4" />
             <input type="text" placeholder="Type your reference, enter to add" class="border border-black w-full p-2 mb-4" />
-            <button onclick="showStep(2)" type="button" class="bg-blue-600 text-white px-8 py-3 font-bold">Continue</button>
+            <div class="flex justify-end">
+              <button onclick="showStep(2)" type="button" class="bg-blue-600 text-white px-8 py-3 font-bold">Continue</button>
+            </div>
           </div>
 
           <!-- Step 2 -->
@@ -43,17 +55,18 @@
               <div>
                 <h2 class="text-xl font-bold mb-4">Add attachments</h2>
                 <div class="flex items-center gap-4 mb-4">
-                  <div class="w-24 h-24 bg-gray-300 flex items-center justify-center text-center text-sm font-bold">Add<br />Zip File</div>
-                  <input type="text" value="Document A" class="border border-black w-full p-2" />
+                  <div class="w-[100px] h-[100px] shrink-0 bg-gray-300 flex items-center justify-center text-center text-sm font-bold">Add<br />Zip File</div>
+                  <input type="text" placeholder="Type name" class="border border-black w-full p-2" />
                 </div>
                 <div class="flex items-center gap-4 mb-4">
-                  <div class="w-24 h-24 bg-gray-300 flex items-center justify-center text-center text-sm font-bold">Add<br />Zip File</div>
-                  <input type="text" value="Presentation B" class="border border-black w-full p-2" />
+                  <div class="w-[100px] h-[100px] shrink-0 bg-gray-300 flex items-center justify-center text-center text-sm font-bold">Add<br />Zip File</div>
+                  <input type="text" placeholder="Type name" class="border border-black w-full p-2" />
                 </div>
                 <div class="flex items-center gap-4 mb-4">
-                  <div class="w-24 h-24 bg-gray-300 flex items-center justify-center text-center text-sm font-bold">Add<br />Zip File</div>
-                  <input type="text" value="Design Files C" class="border border-black w-full p-2" />
+                  <div class="w-[100px] h-[100px] shrink-0 bg-gray-300 flex items-center justify-center text-center text-sm font-bold">Add<br />Zip File</div>
+                  <input type="text" placeholder="Type name" class="border border-black w-full p-2" />
                 </div>
+
                 <button class="border border-black px-4 py-2 font-bold">Add more</button>
               </div>
 
@@ -61,15 +74,31 @@
               <div>
                 <h2 class="text-xl font-bold mb-4">Content deliverable</h2>
                 <select class="border border-black w-full p-2 mb-4">
+                  <option class="hidden">select file type</option>
                   <option>PDF</option>
-                </select>
-                <select class="border border-black w-full p-2 mb-4">
                   <option>DOCX</option>
-                </select>
-                <select class="border border-black w-full p-2 mb-4">
                   <option>PNG</option>
+                  <option>SVG</option>
                 </select>
                 <select class="border border-black w-full p-2 mb-4">
+                  <option class="hidden">select file type</option>
+                  <option>PDF</option>
+                  <option>DOCX</option>
+                  <option>PNG</option>
+                  <option>SVG</option>
+                </select>
+                <select class="border border-black w-full p-2 mb-4">
+                  <option class="hidden">select file type</option>
+                  <option>PDF</option>
+                  <option>DOCX</option>
+                  <option>PNG</option>
+                  <option>SVG</option>
+                </select>
+                <select class="border border-black w-full p-2 mb-4">
+                  <option class="hidden">select file type</option>
+                  <option>PDF</option>
+                  <option>DOCX</option>
+                  <option>PNG</option>
                   <option>SVG</option>
                 </select>
                 <button class="border border-black px-4 py-2 font-bold">Add more</button>
@@ -92,7 +121,7 @@
                 </div>
                 <div>
                   <h2 class="text-lg font-bold mb-2">Add Prize</h2>
-                  <input type="text" placeholder="Type your prize" class="border border-black w-full p-2 mb-4" />
+                  <input type="text" placeholder="Type your prize" class="border border-black w-full p-2 mb-4 focus:outline-none" />
                   <button type="submit" class="bg-blue-600 text-white px-8 py-3 font-bold">Continue</button>
                 </div>
               </div>

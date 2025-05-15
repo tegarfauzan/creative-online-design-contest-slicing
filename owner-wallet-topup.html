@@ -28,7 +28,7 @@
             <div class="flex justify-between items-start mb-8">
               <div class="flex items-center space-x-4">
                 <img src="https://via.placeholder.com/40" alt="User Avatar" class="w-10 h-10 rounded-full bg-gray-300" />
-                <div class="text-right">
+                <div>
                   <p class="font-semibold">Irama Manji</p>
                   <p class="text-sm">Role Owner</p>
                   <a href="/" class="text-sm underline">Logout</a>
@@ -41,11 +41,20 @@
         <div class="p-8 bg-white text-black grid grid-cols-1 lg:grid-cols-2 gap-10">
           <!-- Left Form Section -->
           <form>
-            <div class="mb-6">
+            <div class="mb-6 space-y-4">
               <h2 class="font-semibold mb-2">Send payment to</h2>
-              <p><strong>Bank Name:</strong> BWA Asia</p>
-              <p><strong>Bank Account:</strong> Kreativa Inc</p>
-              <p><strong>Bank Acc No:</strong> 2341293128491</p>
+              <div class="flex justify-between">
+                <span class="font-medium">Bank Name</span>
+                <span>BWA Asia</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="font-medium">Bank Account</span>
+                <span>Kreativa Inc</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="font-medium">Bank Acc No</span>
+                <span>2341293128491</span>
+              </div>
             </div>
 
             <div class="mb-6">
@@ -53,18 +62,30 @@
               <input type="number" class="w-full border border-gray-400 px-4 py-2" placeholder="type amount" />
             </div>
 
-            <div class="mb-6 space-y-1">
-              <p><strong>Amount</strong> <span class="ml-2">Rp 100.000</span></p>
-              <p><strong>Tax 11%</strong> <span class="ml-2">Rp 11.000</span></p>
-              <p><strong>Grand Total</strong> <span class="ml-2">Rp 111.000</span></p>
+            <div class="mb-6 space-y-4">
+              <div class="flex justify-between">
+                <span class="font-medium">Amount</span>
+                <span>Rp 19.000.000</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="font-medium">Tax 11%</span>
+                <span>Rp 1.290.000</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="font-medium">Grand Total</span>
+                <span>Rp 451.293.999</span>
+              </div>
             </div>
 
             <div class="mb-6">
               <label class="block font-semibold mb-2">Proof of payment</label>
-              <label class="w-24 h-24 bg-gray-300 flex items-center justify-center text-sm text-gray-700 cursor-pointer">
-                Add Photo
-                <input type="file" accept="image/*" class="hidden" />
-              </label>
+              <div class="flex items-center gap-[30px]">
+                <label class="w-24 h-24 text-center bg-gray-300 flex items-center justify-center text-sm text-gray-700 cursor-pointer">
+                  Add <br> Photo
+                  <input type="file" accept="image/*" class="hidden" />
+                </label>
+                <button class="border border-black text-black py-2 px-2 w-fit font-semibold rounded">Delete photo</button>
+              </div>
             </div>
 
             <button type="submit" class="w-full bg-blue-600 text-white py-2 font-semibold rounded hover:bg-blue-700">Submit My Top Up</button>
@@ -75,7 +96,7 @@
             <div class="bg-[#1D0F39] text-white p-6 rounded-2xl w-full">
               <p class="text-lg font-semibold">Irama Wallet</p>
               <p class="text-sm text-gray-300 mb-4">Active</p>
-              <p class="text-2xl font-bold">Rp 300.000</p>
+              <p class="text-2xl font-bold">Rp 18.000.000</p>
             </div>
 
             <div>

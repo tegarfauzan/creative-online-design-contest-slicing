@@ -7,25 +7,37 @@
     <title></title>
   </head>
   <body>
-    <div class="p-6 max-w-5xl mx-auto text-black">
-      <!-- Header -->
-      <div class="flex justify-between items-center mb-4">
-        <div>
-          <p class="text-sm text-gray-600">Contest details - category Web Design</p>
-          <h1 class="text-2xl font-bold leading-snug">Landing Page design for Saas Digital Marketing Techno</h1>
-        </div>
-        <section id="ProfileTop">
-          <div class="flex justify-between items-start mb-8">
-            <div class="flex items-center space-x-4">
-              <img src="https://via.placeholder.com/40" alt="User Avatar" class="w-10 h-10 rounded-full bg-gray-300" />
-              <div class="text-right">
-                <p class="font-semibold">Irama Manji</p>
-                <p class="text-sm">Role Owner</p>
-                <a href="/" class="text-sm underline">Logout</a>
-              </div>
+    <nav class="flex items-center justify-between px-6 pb-1 pt-[10px]">
+      <!-- Logo / Company Name -->
+      <div class="text-xl font-semibold">Kreativa</div>
+
+      <!-- Navigation Menu -->
+      <ul class="flex space-x-6 text-sm text-gray-700">
+        <li><a href="#" class="hover:text-black">Home</a></li>
+        <li><a href="#" class="hover:text-black">Categories</a></li>
+        <li><a href="#" class="hover:text-black">Stories</a></li>
+        <li><a href="#" class="hover:text-black">About</a></li>
+      </ul>
+
+      <!-- User Profile -->
+      <section id="ProfileTop">
+        <div class="flex justify-between items-start mb-8">
+          <div class="flex items-center space-x-4">
+            <img src="https://via.placeholder.com/40" alt="User Avatar" class="w-10 h-10 rounded-full bg-gray-300" />
+            <div>
+              <p class="font-semibold">Irama Manji</p>
+              <a href="/" class="text-sm underline">Logout</a>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
+    </nav>
+
+    <div class="p-6 max-w-[803px] mx-auto text-black">
+      <!-- Header -->
+      <div class="mb-4">
+        <p class="text-sm text-gray-600">Contest details - category Web Design</p>
+        <h1 class="text-2xl font-bold leading-snug">Landing Page design for Saas Digital Marketing Techno</h1>
       </div>
 
       <!-- Image Placeholder -->
@@ -63,15 +75,35 @@
           <div>
             <h3 class="font-bold mb-1">Contest Attachments</h3>
             <p class="text-sm text-gray-800 mb-2">Download the assets below to support your work</p>
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-              <div class="flex items-center gap-3 border rounded p-3">
+            <div class="grid grid-cols-2 gap-4">
+              <section class="flex items-center gap-3 rounded p-1">
                 <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
                 <div>
                   <p class="text-sm font-semibold">Nama Asset Logo Misal</p>
                   <button class="text-xs text-blue-600 hover:underline">Download</button>
                 </div>
-              </div>
-              <!-- Ulangi 4x lagi -->
+              </section>
+              <section class="flex items-center gap-3 rounded p-1">
+                <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                <div>
+                  <p class="text-sm font-semibold">Nama Asset Logo Misal</p>
+                  <button class="text-xs text-blue-600 hover:underline">Download</button>
+                </div>
+              </section>
+              <section class="flex items-center gap-3 rounded p-1">
+                <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                <div>
+                  <p class="text-sm font-semibold">Nama Asset Logo Misal</p>
+                  <button class="text-xs text-blue-600 hover:underline">Download</button>
+                </div>
+              </section>
+              <section class="flex items-center gap-3 rounded p-1">
+                <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                <div>
+                  <p class="text-sm font-semibold">Nama Asset Logo Misal</p>
+                  <button class="text-xs text-blue-600 hover:underline">Download</button>
+                </div>
+              </section>
             </div>
           </div>
 
@@ -79,23 +111,23 @@
           <div>
             <h3 class="font-bold mb-1">Content Deliverable</h3>
             <p class="text-sm text-gray-800 mb-2">Once you win please provide these files</p>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <div class="flex items-center gap-3 border rounded p-3">
+            <div class="grid grid-cols-2 gap-4">
+              <section class="flex items-center gap-3 rounded p-1">
                 <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
                 <p class="text-sm font-semibold">Master .FIG</p>
-              </div>
-              <div class="flex items-center gap-3 border rounded p-3">
+              </section>
+              <section class="flex items-center gap-3 rounded p-1">
                 <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
                 <p class="text-sm font-semibold">Prototype</p>
-              </div>
-              <div class="flex items-center gap-3 border rounded p-3">
+              </section>
+              <section class="flex items-center gap-3 rounded p-1">
                 <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
                 <p class="text-sm font-semibold">Preview .PNG</p>
-              </div>
-              <div class="flex items-center gap-3 border rounded p-3">
+              </section>
+              <section class="flex items-center gap-3 rounded p-1">
                 <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
                 <p class="text-sm font-semibold">Fonts</p>
-              </div>
+              </section>
             </div>
           </div>
 
@@ -109,12 +141,45 @@
 
       <!-- Submissions -->
       <div data-tab-content="submissions" class="hidden">
-        <div class="flex justify-end mb-4">
-          <a href="owner-contests-submit.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded text-sm font-semibold">Submit Design</a>
+        <div class="flex justify-between items-center mb-4">
+          <p>Are you ready to submit your design work?</p>
+          <a href="owner-contests-details-submit.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded text-sm font-semibold">Submit Design</a>
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-          <div class="w-full aspect-square bg-gray-300 flex items-center justify-center text-center text-sm underline">Preview Image</div>
-          <!-- Tambahkan 7 div lagi seperti di atas -->
+        <p class="font-semibold mb-6">Contest Submissions</p>
+        <div class="grid grid-cols-3 gap-6">
+          <section class="flex flex-col gap-[15px]">
+            <div class="w-full aspect-square bg-gray-300 flex items-center justify-center text-center text-sm underline">Preview Image</div>
+            <p>by Angga Risky</p>
+          </section>
+          <section class="flex flex-col gap-[15px]">
+            <div class="w-full aspect-square bg-gray-300 flex items-center justify-center text-center text-sm underline">Preview Image</div>
+            <p>by Angga Risky</p>
+          </section>
+          <section class="flex flex-col gap-[15px]">
+            <div class="w-full aspect-square bg-gray-300 flex items-center justify-center text-center text-sm underline">Preview Image</div>
+            <p>by Angga Risky</p>
+          </section>
+          <section class="flex flex-col gap-[15px]">
+            <div class="w-full aspect-square bg-gray-300 flex items-center justify-center text-center text-sm underline">Preview Image</div>
+            <p>by Angga Risky</p>
+          </section>
+          <section class="flex flex-col gap-[15px]">
+            <div class="w-full aspect-square bg-gray-300 flex items-center justify-center text-center text-sm underline">Preview Image</div>
+            <p>by Angga Risky</p>
+          </section>
+          <section class="flex flex-col gap-[15px]">
+            <div class="w-full aspect-square bg-gray-300 flex items-center justify-center text-center text-sm underline">Preview Image</div>
+            <p>by Angga Risky</p>
+          </section>
+          <section class="flex flex-col gap-[15px]">
+            <div class="w-full aspect-square bg-gray-300 flex items-center justify-center text-center text-sm underline">Preview Image</div>
+            <p>by Angga Risky</p>
+          </section>
+          <section class="flex flex-col gap-[15px]">
+            <div class="w-full aspect-square bg-gray-300 flex items-center justify-center text-center text-sm underline">Preview Image</div>
+            <p>by Angga Risky</p>
+          </section>
+          
         </div>
       </div>
 
