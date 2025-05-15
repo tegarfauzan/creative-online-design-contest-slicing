@@ -24,9 +24,9 @@
 
           <!-- Step Tabs -->
           <div class="flex items-center gap-4 mb-8">
-            <button id="tab1" onclick="showStep(1)" class="step-tab px-4 py-2 rounded font-bold bg-[#1E144F] text-white">Step 1</button>
-            <button id="tab2" onclick="showStep(2)" class="step-tab px-4 py-2 rounded font-bold border border-black text-black">Step 2</button>
-            <button id="tab3" onclick="showStep(3)" class="step-tab px-4 py-2 rounded font-bold border border-black text-black">Step 3</button>
+            <button id="tab1" onclick="showStep(event,1)" class="step-tab px-4 py-2 rounded font-bold bg-[#1E144F] text-white">Step 1</button>
+            <button id="tab2" onclick="showStep(event,2)" class="step-tab px-4 py-2 rounded font-bold border border-black text-black">Step 2</button>
+            <button id="tab3" onclick="showStep(event,3)" class="step-tab px-4 py-2 rounded font-bold border border-black text-black">Step 3</button>
           </div>
 
           <!-- Step 1 -->
@@ -144,7 +144,8 @@
     </div>
     <script>
       // Script untuk toggle antar step (tanpa framework)
-      function showStep(step) {
+      function showStep(event, step) {
+        event.preventDefault();
         document.querySelectorAll(".step").forEach((s) => s.classList.add("hidden"));
         document.getElementById("step" + step).classList.remove("hidden");
 
